@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Confira seus dados de usuário</title>
+	<!--
+		adicioanr evento personalizado com nome do produto 
+		e a forma de pagamento e valor
+	-->
+	<script>
+		fbq('trackCustom', 'InitiateCheckout', {
+		dominio: 'comicsals.com.br',
+		pagina: 'checkout.html',
+		fonte: {produto:'HQ', total: 80, formaDePagamento:'cartão de credito', usuario: 'ciclano' }});
+	</script>
+</head>
+<body>
+<div id="container">
+	<h1>Dados do usuário</h1>
+	<nav>
+		<ul>
+			<li><a href="pagamento.html">Efetuar pagamento</a></li>
+		</ul>
+	</nav>
+</div>
+</body>
+</html>

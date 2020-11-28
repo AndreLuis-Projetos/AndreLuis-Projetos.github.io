@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pagamento</title>
+	<!--
+		evento pagamento
+	-->
+	<script>
+		fbq('trackCustom', 'AddPaymentInfo', {
+		dominio: 'comicsals.com.br',
+		pagina: 'pagamento.html',
+		fonte: { pedido: '22233', formaDePagamento:'cartão de credito' ,usuario: 'ciclano' }});
+	</script>
+</head>
+<body>
+<div id="container">
+	<h1>Pagamento</h1>
+	<nav>
+		<ul>
+			<li><a href="agradecimento.html">Confirmar Pagamento</a></li>
+		</ul>
+	</nav>
+</div>
+</body>
+</html>
